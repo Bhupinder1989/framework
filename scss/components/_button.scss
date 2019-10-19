@@ -1,0 +1,40 @@
+/* Button start here */
+@import '../components/color-plates';
+@import '../components/mixin';
+@import '../components/variables';
+
+.btn {
+    background: color('red', 'dark-red-1');
+    color: color('original-color', 'white');
+    @include fontSize(14px, 26px);
+    padding: 0.5rem 1.5rem;
+    display: $display-inline-block;
+    border: 2px solid color('original-color', 'transparent');
+    @include transition(all .5s);
+    cursor: $cursor-pointer;
+
+    &:hover {
+        background: color('red', 'dark-red-4');
+    }
+
+    &:focus {
+        outline: $none;
+    }
+}
+
+.btn-round {
+    @include border-radius(30px);
+}
+
+.btn-border {
+    background: color('original-color', 'transparent');
+    color: color('original-color', 'black');
+    border: 2px solid color('original-color', 'black');
+
+    &:hover {
+        background: color('original-color', 'black');
+        color: color('original-color', 'white');
+    }
+}
+
+/* Button end here */

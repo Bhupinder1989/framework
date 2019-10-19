@@ -1,0 +1,18 @@
+/* Alert start here */
+@import '../components/color-plates';
+@import '../components/mixin';
+@import '../components/variables';
+
+.alert {
+    background-color: color('green', 'dark-green-4');
+    color: color('original-color', 'white');
+    @include m-p(all, null, all, 0.8rem 1.5rem);
+    @include d_flex();
+
+    .fa-times {
+        @include m-p(all, 0 0 0 auto, all, null);
+        color: color('original-color', 'white');
+    }
+}
+
+/* Alert end here */

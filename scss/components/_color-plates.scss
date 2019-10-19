@@ -1,0 +1,46 @@
+// Color platest for theme
+$red-color: ('dark-red-1':#643335,
+    'dark-red-2':#713436,
+    'dark-red-3':#83373a,
+    'dark-red-4':#963c40,
+    'light-red-1':#a34145,
+    'light-red-2':#ad484c,
+    'light-red-3':#bb4f54,
+    'light-red-4':#cc585d,
+);
+$blue-color: ('dark-blue-1':#003865,
+    'dark-blue-2':#073e69,
+    'dark-blue-3':#084472,
+    'dark-blue-4':#0c4a79,
+    'light-blue-1':#0e5387,
+    'light-blue-2':#0f5c97,
+    'light-blue-3':#1064a5,
+    'light-blue-4':#0f6eb7,
+);
+$green-color: ('dark-green-1':#004C23,
+    'dark-green-2':#015528,
+    'dark-green-3':#005f2c,
+    'dark-green-4':#016a32,
+    'light-green-1':#047539,
+    'light-green-2':#087d3f,
+    'light-green-3':#088945,
+    'light-green-4':#08984c,
+);
+$purple-color: ('dark-purple-1':#3C1053,
+    'dark-purple-2':#44135e,
+    'dark-purple-3':#4a1765,
+    'dark-purple-4':#511b6e,
+    'light-purple-1':#5a1e7b,
+    'light-purple-2':#612383,
+    'light-purple-3':#6c2990,
+    'light-purple-4':#77319c,
+);
+$original-color: ('white':#FFFFFF,
+    'black':#000000,
+    'transparent':transparent);
+
+$colors:("red":$red-color,
+    "blue":$blue-color,
+    "green":$green-color,
+    "purple":$purple-color,
+    "original-color":$original-color) !default;

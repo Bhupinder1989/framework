@@ -1,0 +1,113 @@
+/* Grid Sysytem start */
+@import '../components/variables';
+@import '../components/mixin';
+@import '../components/extend';
+
+.row {
+    @include d_flex();
+    @include flex_wrap($flex-wrap);
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+}
+
+.container {
+    max-width: $full;
+    @include m-p(all, $auto, all, 0 0.9375rem);
+
+    &:before {
+        @extend .clearboth;
+    }
+
+    &:after {
+        content: "";
+        display: $display-table;
+    }
+}
+
+[class^='grid-'] {
+    @include m-p(all, null, all, 0 0.9375rem);
+}
+
+@for $i from 1 through $grid-count {
+    .grid-vs-#{$i} {
+        max-width: percentage($i / $grid-count);
+        flex: 0 0 $full * $i / $grid-count;
+    }
+
+    .grid-order-vs-#{$i} {
+        order: $i;
+    }
+}
+
+
+@media(min-width:$breakepoints-verysmall-device) {
+    @for $i from 1 through $grid-count {
+        .grid-s-#{$i} {
+            max-width: percentage($i / $grid-count);
+            flex: 0 0 $full * $i / $grid-count;
+        }
+
+        .grid-order-s-#{$i} {
+            order: $i;
+        }
+    }
+
+    .container {
+        @include px-to-rem(620px);
+    }
+}
+
+
+@media(min-width:$breakepoints-small-device) {
+    @for $i from 1 through $grid-count {
+        .grid-m-#{$i} {
+            max-width: percentage($i / $grid-count);
+            flex: 0 0 $full * $i / $grid-count;
+        }
+
+        .grid-order-m-#{$i} {
+            order: $i;
+        }
+    }
+
+    .container {
+        @include px-to-rem(760px);
+    }
+
+}
+
+@media(min-width:$breakepoints-medium-device) {
+    @for $i from 1 through $grid-count {
+        .grid-l-#{$i} {
+            max-width: percentage($i / $grid-count);
+            flex: 0 0 $full * $i / $grid-count;
+        }
+
+        .grid-order-l-#{$i} {
+            order: $i;
+        }
+    }
+
+    .container {
+        @include px-to-rem(970px);
+    }
+}
+
+@media(min-width:$breakepoints-large-device) {
+    @for $i from 1 through $grid-count {
+        .grid-xl-#{$i} {
+            max-width: percentage($i / $grid-count);
+            flex: 0 0 $full * $i / $grid-count;
+        }
+
+        .grid-order-xl-#{$i} {
+            order: $i;
+        }
+    }
+
+    .container {
+        @include px-to-rem(1170px);
+    }
+}
+
+/* Grid Sysytem end */

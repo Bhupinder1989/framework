@@ -1,0 +1,51 @@
+// Common Variables for all
+
+$auto:auto;
+$zero:0;
+$full:100%;
+$clear-both:both;
+$none:none;
+
+// Flex variables
+
+$display-flex:flex;
+$display-inline-flex:inline-flex;
+$display-block:block;
+$display-inline-block:inline-block;
+$display-table:table;
+$display-none:none;
+$flex-wrap:wrap;
+$flex-no-wrap:nowrap;
+
+
+// Text variables
+
+$text-uppercase:uppercase;
+$text-capitalize:capitalize;
+$text-lowercase:lowercase;
+$text-center:center;
+$text-right:right;
+$text-left:left;
+$text-justify:justify;
+
+// Alignement content Variables
+
+$align-items-center:center;
+$align-items-start:flex-start;
+$align-items-end:flex-end;
+$justify-conent-center:center;
+
+// Columns Variables
+
+$grid-count:12;
+
+// Media Breakepoints variables
+
+$breakepoints-large-device:1200px;
+$breakepoints-medium-device:991px;
+$breakepoints-small-device:768px;
+$breakepoints-verysmall-device:640px;
+
+// Cursor Pointer
+
+$cursor-pointer:pointer;

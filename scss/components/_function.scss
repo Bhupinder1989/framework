@@ -1,0 +1,33 @@
+// Px to rem Function
+
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+
+@function fontSizeRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+
+// color function
+
+@function color($name,
+    $theme:null,
+    $component:null,
+) {
+
+    @if ($theme==null) and ($component==null) {
+        @return map-get($colors, $name);
+    }
+
+    @else if ($theme !=null) and ($component==null) {
+        @return map-get(map-get($colors, $name), $theme);
+    }
+
+    @else {
+        @return map-get(map-get(map-get($colors, $name), $theme), $component);
+    }
+}

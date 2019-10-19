@@ -1,0 +1,19 @@
+/* Base CSS start here */
+
+@import '../components/mixin';
+@import '../components/color-plates';
+@import '../components/variables';
+
+*,
+*:after,
+*:before {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: $none;
+}

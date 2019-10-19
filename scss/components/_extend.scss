@@ -1,0 +1,22 @@
+// Extend Or Inheritance
+
+@import '../components/variables';
+
+.clearboth {
+    content: "";
+    display: $display-table;
+    clear: $clear-both;
+
+    &:before {
+        content: "";
+        display: $display-table;
+        clear: $clear-both;
+    }
+
+    &:after {
+        content: "";
+        display: $display-table;
+        clear: $clear-both;
+    }
+
+}
